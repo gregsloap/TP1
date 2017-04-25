@@ -1,4 +1,5 @@
-﻿# TP1
+﻿# TP1-Bouncing Ball.
+ 
 O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programação orientada a objetos, para simular o movimento de uma bola saltitante "bouncing ball".Tendo em vista que esseparadigma representa de maneira mais fiel objetos "fisicos" reais de modo a tratá-los de maneira mais intuitiva, sendo a bouncing-ball um exemplo ideal.
 Para a realização do projeto foi necessária a utilização do Visual Studio 11(ou superior) em conjunto com o C++ lab, utilizando-se das bibliotecas: 
 
@@ -17,7 +18,17 @@ ball.cpp: contem as coordenadas da bola e mantém registro de sua posição.
 test-ball.cpp:
 
 
-Task 2 saída:
+
+
+
+
+
+
+
+
+
+
+Task 2 (também no arquivo ball.txt) saída :
  0.01 -0.00877778
 0.02 -0.0284444
 0.03 -0.059
@@ -118,3 +129,5 @@ Task 2 saída:
 0.81 -0.176
 0.8 -0.119444
 0.79 -0.0737778
+
+Task 4:(no arquivo grafico.png)
