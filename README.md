@@ -1,6 +1,6 @@
 ﻿# TP1-Bouncing Ball.
  
-O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programação orientada a objetos, para simular o movimento de uma bola saltitante "bouncing ball".Tendo em vista que esseparadigma representa de maneira mais fiel objetos "fisicos" reais de modo a tratá-los de maneira mais intuitiva, sendo a bouncing-ball um exemplo ideal.
+1.O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programação orientada a objetos, para simular o movimento de uma bola saltitante "bouncing ball".Tendo em vista que esseparadigma representa de maneira mais fiel objetos "fisicos" reais de modo a tratá-los de maneira mais intuitiva, sendo a bouncing-ball um exemplo ideal.
 Para a realização do projeto foi necessária a utilização do Visual Studio 11(ou superior) em conjunto com o C++ lab, utilizando-se das bibliotecas: 
 
 iostream
@@ -13,18 +13,25 @@ iomanip
 
 A versão do compilador utilizada foi gcc 4.9.2.
 
+Linhas de compilacao dos arquivos:
+
+-test-ball : ball.cpp ball.h test-ball.cpp
+-test-ball-graphics : graphics.cpp ball.cpp test-ball-graphics.cpp
+-test-springmass : springmass.cpp test-springmass.cpp
+-test-springmass-graphics : graphics.cpp springmass.cpp test-springmass-graphics.c 
+
+
 Descrição dos arquivos:
-ball.cpp: contem as coordenadas da bola e mantém registro de sua posição.
-test-ball.cpp:
 
+- ball.h: Define a Classe ball e seus atributos que serão herdados por varias outras classes. 
+- ball.cpp: Contem as coordenadas da bola e a implementaçao dos metodos para "movimentá-la" e mantém registro de sua posição.
+- test-ball.cpp: Executa os metodos da ball.cpp, dando movimento de fato a bola.
+- simulation.h: Define a Classe simulation e seus atributos; Contendo portanto as variáveis de ambiente necessárias para a representaçao física da "realidade" de modo a criar um ambiente para a simulação da bola quicando.
+- spring-mass: define as variáveis e condiçoes necessarias para simular o "quique" emulando uma especie de força elástica que será aplicada ao "quique" da bola.
+- test-spring-mass: executa os métodos, etc. Contidos na spring-mass.cpp
+- test-spring.h: Define a Classe springmass:  e seus atributos que serão herdados por varias outras classes.
 
-
-
-
-
-
-
-
+*obs:Os demais arquivos são referentes a interface e saída gráficas do program, essas já sendo pre-concebidas.
 
 
 
