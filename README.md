@@ -51,6 +51,10 @@ iomanip
 - **test-ball.cpp:** Executa os metodos da ball.cpp, dando movimento de fato a bola.
 
 
+### Diagrama de Classes: 
+
+![diagrama de classes](https://github.com/gregsloap/TP1/blob/master/diagramadeclasses.png)
+
 
 
 Task 2 (também no arquivo ball.txt) saída :
