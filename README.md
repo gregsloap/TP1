@@ -168,3 +168,5 @@ iomanip
 	obs: Task 4
 
 ![grafico.png](https://github.com/gregsloap/TP1/blob/master/grafico.png)
+
+- gráfico produzido com plotly, segue o link: https://plot.ly/~gregfla2009/3/
