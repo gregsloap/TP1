@@ -1,37 +1,55 @@
-﻿# TP1-Bouncing Ball.
+ # Laboratório de Técnicas de programação 1.
+ ## Universidade de Brasília
+ ### Departamento de Ciencias da Computação
+ #### Professor: Téofilo de Campos
  
-1.O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programação orientada a objetos, para simular o movimento de uma bola saltitante "bouncing ball".Tendo em vista que esseparadigma representa de maneira mais fiel objetos "fisicos" reais de modo a tratá-los de maneira mais intuitiva, sendo a bouncing-ball um exemplo ideal.
-Para a realização do projeto foi necessária a utilização do Visual Studio 11(ou superior) em conjunto com o C++ lab, utilizando-se das bibliotecas: 
+ 
+ #### Aluno: João Gregório Mesquita Saiz Lopes
+ #### Matrícula:15/0132018
+ #### Turma: A.
+ 
+### 1. Introdução: 
+O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programação orientada a objetos, para simular o movimento de uma bola saltitante "bouncing ball".Tendo em vista que esseparadigma representa de maneira mais fiel objetos "fisicos" reais de modo a tratá-los de maneira mais intuitiva, sendo a bouncing-ball um exemplo ideal.
+### 2. Requisitos:
+- Para a realização do projeto foi necessária a utilização do Visual Studio 11(ou superior) em conjunto com o C++ lab, utilizando-se das bibliotecas: 
 
 iostream
+
 cmath
+
 vector
+
 cassert
+
 algorithm
+
 sstream
+
 iomanip
 
-A versão do compilador utilizada foi gcc 4.9.2.
+- A versão do compilador utilizada foi gcc 4.9.2.
 
-Linhas de compilacao dos arquivos:
+- Linhas de compilacao dos arquivos:
 
--test-ball : ball.cpp ball.h test-ball.cpp
--test-ball-graphics : graphics.cpp ball.cpp test-ball-graphics.cpp
--test-springmass : springmass.cpp test-springmass.cpp
--test-springmass-graphics : graphics.cpp springmass.cpp test-springmass-graphics.c 
+`cd < diretório > 
 
+g++ ball.cpp ball.h test-ball.cpp` 
 
-Descrição dos arquivos:
+### 3. Descrição dos arquivos:
 
-- ball.h: Define a Classe ball e seus atributos que serão herdados por varias outras classes. 
-- ball.cpp: Contem as coordenadas da bola e a implementaçao dos metodos para "movimentá-la" e mantém registro de sua posição.
-- test-ball.cpp: Executa os metodos da ball.cpp, dando movimento de fato a bola.
-- simulation.h: Define a Classe simulation e seus atributos; Contendo portanto as variáveis de ambiente necessárias para a representaçao física da "realidade" de modo a criar um ambiente para a simulação da bola quicando.
-- spring-mass: define as variáveis e condiçoes necessarias para simular o "quique" emulando uma especie de força elástica que será aplicada ao "quique" da bola.
-- test-spring-mass: executa os métodos, etc. Contidos na spring-mass.cpp
-- test-spring.h: Define a Classe springmass:  e seus atributos que serão herdados por varias outras classes.
+- **ball.h:** Define a Classe ball seus métodos e atributos que serão utilizados na criação dos objetos .
 
-*obs:Os demais arquivos são referentes a interface e saída gráficas do program, essas já sendo pre-concebidas.
+**Atributos de ball:** Posição e velocidade no eixo x e y, raio e massa, gravidade aplicada e as dimensões da caixa onde a bola se encontra; 
+
+**Métodos de ball:** 
+
+	Step: Calcula o passo da bola. 
+		
+	Display: Imprime os valores na tela.
+		
+- **ball.cpp:** Contem as coordenadas da bola e a implementaçao dos metodos para "movimentá-la" e mantém registro de sua posição.
+- **test-ball.cpp:** Executa os metodos da ball.cpp, dando movimento de fato a bola.
+
 
 
 
