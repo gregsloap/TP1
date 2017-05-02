@@ -31,21 +31,21 @@ iomanip
 
 - Linhas de compilacao dos arquivos:
 
-`cd < diretório > 
+	'cd < diretório >' 
 
-g++ ball.cpp ball.h test-ball.cpp` 
+	'g++ ball.cpp ball.h test-ball.cpp'
 
 ### 3. Descrição dos arquivos:
 
 - **ball.h:** Define a Classe ball seus métodos e atributos que serão utilizados na criação dos objetos .
 
-**Atributos de ball:** Posição e velocidade no eixo x e y, raio e massa, gravidade aplicada e as dimensões da caixa onde a bola se encontra; 
+	**Atributos de ball:** Posição e velocidade no eixo x e y, raio e massa, gravidade aplicada e as dimensões da caixa onde a bola 	se encontra; 
 
-**Métodos de ball:** 
+	**Métodos de ball:** 
 
-	Step: Calcula o passo da bola. 
+		Step: Calcula o passo da bola. 
 		
-	Display: Imprime os valores na tela.
+		Display: Imprime os valores na tela.
 		
 - **ball.cpp:** Contem as coordenadas da bola e a implementaçao dos metodos para "movimentá-la" e mantém registro de sua posição.
 - **test-ball.cpp:** Executa os metodos da ball.cpp, dando movimento de fato a bola.
