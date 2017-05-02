@@ -51,9 +51,7 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 
 
 ### 5. Saída de *ball.h*
-	obs:Task 2 (também no arquivo ball.txt):
-	
-[ball.txt](https://github.com/gregsloap/TP1/blob/master/ball.txt)
+- obs: Task 2 (também no arquivo [ball.txt](https://github.com/gregsloap/TP1/blob/master/ball.txt)):
 
 
 		0.01 -0.00877778
