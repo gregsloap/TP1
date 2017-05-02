@@ -13,27 +13,21 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 ### 2. Requisitos:
 - Para a realização do projeto foi necessária a utilização do Visual Studio 11(ou superior) em conjunto com o C++ lab, utilizando-se das bibliotecas: 
 
-iostream
-
-cmath
-
-vector
-
-cassert
-
-algorithm
-
-sstream
-
-iomanip
+		iostream
+		cmath
+		vector
+		cassert
+		algorithm
+		sstream
+		iomanip
 
 - A versão do compilador utilizada foi gcc 4.9.2.
 
 - Linhas de compilacao dos arquivos:
 
-	'cd < diretório >' 
+	 	cd < diretório > 
 
-	'g++ ball.cpp ball.h test-ball.cpp'
+		g++ ball.cpp ball.h test-ball.cpp -o ball 
 
 ### 3. Descrição dos arquivos:
 
