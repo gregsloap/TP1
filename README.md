@@ -43,6 +43,9 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 		
 - **ball.cpp:** Contem as coordenadas da bola e a implementaçao dos metodos para "movimentá-la" e mantém registro de sua posição.
 - **test-ball.cpp:** Executa os metodos da ball.cpp, dando movimento de fato a bola.
+- **springmass.h:**
+- **springmass.cpp** 
+- **simulation-test.cpp**
 
 
 ### 4. Diagrama de Classes: 
