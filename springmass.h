@@ -109,7 +109,7 @@ public:
   int mkMass(Mass vetMassas); // método para inserção de uma massa
   void mkSpring(int i, int j,double naturalLength, double stiffness, double damping); // método para inserção de uma mola
 
-//indices i,j para cada massa a ser conectada a esta mola bem como os parametros damping ,naturalLength, stiffness para construi-la
+//indices i,j para cada massa a ser conectada à mola bem como os parametros damping ,naturalLength, stiffness para construi-la
 
 protected:
   double gravity ;
