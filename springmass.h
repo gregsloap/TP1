@@ -55,16 +55,15 @@ public:
   double getRadius() const ;
   double getEnergy(double gravity) const ;
   void step(double dt) ;
-  double size();
-  
+
 protected:
-  Vector2 force ;
   Vector2 position ; 
   Vector2 velocity ;
+  Vector2 force ;
   double mass ;
+  double energy(double gravity); // Definimos o construtor  energy como privado.
   double radius ; // Assume-se que as massas sao esferas.
-  double energy ; // Energia aplicada a bola.
-  
+
   double xmin ; // Limites, i.e., dimensoes da caixa onde o sistema se encontra,
   double xmax ; // onde x sao dimensoes horizontais e
   double ymin ; // y sao dimensoes verticais.
@@ -84,23 +83,16 @@ public:
   Vector2 getForce() const ;
   double getLength() const ;
   double getEnergy() const ;
+  double naturalLength; // definimos naturalLength , stiffness , damping , como atributos publicos .
+  double stiffness;
+  double damping;
 
 protected:
-
-   Mass *mass1 ;
-   Mass *mass2 ;
-   Vector2 force ;
-   double lenght ;
-   double energy ;
-   double stiffness;
-   double damping;
-   double naturalLength;
-  /* INCOMPLETE: TYPE YOUR CODE HERE 
-     Insira atributos protegidos que permitem calcular a forca 
-     e a energia de uma mola. Dica: veja o construtor acima.
-     Adicione tambem 2 ponteiros para objetos do tipo Mass 
-     (um para cada extremidade da mola).
-   */
+  Vector2 force; // definimos force , energy , lenght , *mass1 e *mass2 como métodos privados .
+  double energy;
+  Mass *mass1;
+  Mass *mass2;
+  double lenght;
 } ;
 
 /* ---------------------------------------------------------------- */
@@ -114,31 +106,19 @@ public:
   void step(double dt) ;
   void display() ;
   double getEnergy() const ;
+  int mkMass(Mass vetMassas); // método para inserção de uma massa
+  void mkSpring(int i, int j,double naturalLength, double stiffness, double damping); // método para inserção de uma mola
 
-  int mkMass(Mass vmass);
-  void mkSpring(int r, int s, double naturalLength, double stiffness, double damping);
-  
-  
-  /* INCOMPLETE: TYPE YOUR CODE HERE 
-     Adicione dois metodos que permitem construir o sistema,
-     - um para adicionar uma massa, que teria como entrada
-       um objeto da classe Mass, e
-     - outro para adicionar uma mola, que teria como entrada
-       - dois indices (um para cada massa que sera 
-         conectada a esta mola);
-       - os outros parametros necessarios para se "construir"
-         uma mola.       
-   */
+//indices i,j para cada massa a ser conectada a esta mola bem como os parametros damping ,naturalLength, stiffness para construi-la
 
 protected:
   double gravity ;
 
-    typedef std::vector<Mass> mass_t;
-    typedef std::vector<Spring> springs_t; 
-	mass_t vmass; 
-	springs_t vsprings; 
-	
+  typedef std::vector<Mass> masses_t; // definimos aqui 2 vetores , um para massas e outro para molas.
+  typedef std::vector<Spring> springs_t;
+  masses_t vetMassas;
+  springs_t vetSprings;
+
 } ;
 
 #endif /* defined(__springmass__) */
-
