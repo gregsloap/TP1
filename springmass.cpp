@@ -7,6 +7,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 /* ---------------------------------------------------------------- */
 // class Mass
 /* ---------------------------------------------------------------- */
@@ -58,6 +60,7 @@ double Mass::getMass() const
 double Mass::getEnergy(double gravity) const
 {
   double energy = 0 ;
+  double E_cinetica , E_potencial;
 
   /* INCOMPLETE: TYPE YOUR CODE HERE 
      Este metodo calcula a energia esta massa, indepentente
@@ -97,6 +100,7 @@ void Mass::step(double dt)
      eh melhor separar os calculos de componentes
      x e y da velocidade e da posicao.
    */
+
 }
 
 /* ---------------------------------------------------------------- */
@@ -153,6 +157,7 @@ Vector2 Spring::getForce() const
         de (5) multiplicado pelo vetor de direcao da mola (3).	
    */
 
+
   return F ;
 }
 
@@ -192,7 +197,6 @@ SpringMass::SpringMass(double gravity)
 void SpringMass::display()
 {
 
-
   /* INCOMPLETE: TYPE YOUR CODE HERE 
      Implemente usando dois loops:
      1. imprima todas as massas
@@ -201,23 +205,8 @@ void SpringMass::display()
      para massas e molas, pois eles foram definidos acima.
      Posteriormente, imprima a energia total do sistema.     
    */
+
 }
-
-int SpringMass::mkMass(Mass vamass) { // Criar massa
-	vmass.push_back(vamass);
-	return (int)vmass.size() - 1;
-}
-
-double Mass::size(){ // Gerar tamanho da bola
-	return radius*radius* 3,14;
-}
-
-void SpringMass::mkSpring(int r, int s, double naturalLength, double stiffness, double damping) { // Cria mola 
-	Spring spring_1(&vmass[r], &vmass[s], naturalLength, stiffness, damping);
-	vsprings.push_back(spring_1);
-	
-   };
-
 
 double SpringMass::getEnergy() const
 {
@@ -231,6 +220,22 @@ double SpringMass::getEnergy() const
 
   return energy ;
 }
+
+int SpringMass::mkMass(Mass vMassas){
+   vetMassas.push_back(vMassas);
+   return (int)vetMassas.size()-1;
+
+   //método para inserção de ua massa.
+   //Que retorna o numero total de massas.
+}
+
+void SpringMass::mkSpring(int i, int j,double naturalLength, double stiffness, double damping){
+     Spring sp1(&vetMassas[i] ,&vetMassas[j] , naturalLength , stiffness ,damping);
+     vetSprings.push_back(sp1);
+
+     //método para inserção de uma mola.
+     //push_back() método usado para adicionar elementos na estrutura tipo vector
+};
 
 void SpringMass::step(double dt)
 {
@@ -248,19 +253,6 @@ void SpringMass::step(double dt)
      3. Atualize a posicao e velocidade de todas as massas,
         i.e., execute o metodo step() delas.
    */
+
+
 }
-
-
-/* INCOMPLETE: TYPE YOUR CODE HERE 
-
-   Neste ponto, insira os metodos que estao faltando:
-   um para adicionar uma massa e outro para adicionar uma mola
-   no sistema.
-   Para adicionar elementos numa estrutura do tipo vector,
-   use o metodo push_back().
-   O metodo de adicionar massa pode retornar o numero total
-   de massas, i.e., return (int)masses.size() -1;
-   O metodo de adicionar mola deve usar referencias 
-   `a massa de cada extremidade e o construtor de mola.
- */
-
