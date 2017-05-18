@@ -194,8 +194,7 @@ Continuando o que foi feito em *Ball*, essa parte do trabalho visa implementar u
 		
 		Display: Imprime os valores de saída.
 		
-- **ball.cpp:** Contem as coordenadas da bola e a implementaçao dos metodos para "movimentá-la" e mantém registro de sua posição.
-- **test-ball.cpp:** Executa os metodos da ball.cpp, dando movimento de fato a bola.
-- **springmass.h:**
-- **springmass.cpp** 
-- **simulation-test.cpp**
+- **springmass.cpp:** Contem as coordenadas da mola e a implementaçao dos metodos para "movimentá-la" e mantém registro de sua posição.
+- **test-springmass.cpp:** Cria-se o Objeto e são executados os metodos da classe springmass, dando movimento de fato a mola.
+
+### 2.4. Diagrama: 
