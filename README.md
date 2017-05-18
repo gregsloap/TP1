@@ -198,3 +198,4 @@ Continuando o que foi feito em *Ball*, essa parte do trabalho visa implementar u
 - **test-springmass.cpp:** Cria-se o Objeto e são executados os metodos da classe springmass, dando movimento de fato a mola.
 
 ### 2.4. Diagrama: 
+https://github.com/gregsloap/TP1/blob/master/diagramadeclasses2.png
