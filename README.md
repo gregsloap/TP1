@@ -505,8 +505,16 @@ Continuando o que foi feito em *Ball*, essa parte do trabalho visa implementar u
 	X2: 0.97416 Y2: 0.928932
 	
 	
-### 1.6. Gráfico:
+### 2.6. Gráfico:
 
 ![grafico mola 1](https://github.com/gregsloap/TP1/blob/master/sprng.png)
 
-- gráfico produzido com MathWorks Octave-like Online.
+- gráfico produzido com MathWorks Octave-like Online, segue o link: http://octave-online.net/;
+
+
+
+
+
+### 3.0. Grafics
+
+### 3.1. Introdução: 
