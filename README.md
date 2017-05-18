@@ -507,4 +507,6 @@ Continuando o que foi feito em *Ball*, essa parte do trabalho visa implementar u
 	
 ### 1.6. Gráfico:
 
-![grafico mola 1]()
+![grafico mola 1](https://github.com/gregsloap/TP1/blob/master/sprng.png)
+
+- gráfico produzido com MathWorks Octave-like Online.
