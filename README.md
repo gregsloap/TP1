@@ -8,9 +8,9 @@
  #### Matrícula:15/0132018
  #### Turma: A.
  
-### 1. Introdução: 
+### 1.1. Introdução: 
 O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programação orientada a objetos, para simular o movimento de uma bola saltitante "bouncing ball".Tendo em vista que esseparadigma representa de maneira mais fiel objetos "fisicos" reais de modo a tratá-los de maneira mais intuitiva, sendo a bouncing-ball um exemplo ideal.
-### 2. Requisitos:
+### 1.2. Requisitos:
 - Para a realização do projeto foi necessária a utilização do Visual Studio 11(ou superior) em conjunto com o C++ lab, utilizando-se das bibliotecas: 
 
 		iostream
@@ -29,7 +29,7 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 
 		g++ ball.cpp ball.h test-ball.cpp -o ball 
 
-### 3. Descrição dos arquivos:
+### 1.3. Descrição dos arquivos:
 
 - **ball.h:** Define a Classe ball seus métodos e atributos que serão utilizados na criação dos objetos .
 
@@ -48,12 +48,12 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 - **simulation-test.cpp**
 
 
-### 4. Diagrama de Classes: 
+### 1.4. Diagrama de Classes: 
 
 ![diagrama de classes](https://github.com/gregsloap/TP1/blob/master/diagramadeclasses.png)
 
 
-### 5. Saída de *ball.h*
+### 1.5. Saída de *ball.h*
 - obs: Task 2 (também no arquivo [ball.txt](https://github.com/gregsloap/TP1/blob/master/ball.txt)):
 
 
@@ -158,7 +158,7 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 		0.8 -0.119444
 		0.79 -0.0737778
 
-### 5. Gráfico:
+### 1.6. Gráfico:
 
 	obs: Task 4
 
