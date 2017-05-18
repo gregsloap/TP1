@@ -7,7 +7,7 @@
  #### Aluno: João Gregório Mesquita Saiz Lopes
  #### Matrícula:15/0132018
  #### Turma: A.
- 
+### 1.0 Ball 
 ### 1.1. Introdução: 
 O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programação orientada a objetos, para simular o movimento de uma bola saltitante "bouncing ball".Tendo em vista que esseparadigma representa de maneira mais fiel objetos "fisicos" reais de modo a tratá-los de maneira mais intuitiva, sendo a bouncing-ball um exemplo ideal.
 ### 1.2. Requisitos:
@@ -165,3 +165,37 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 ![grafico.png](https://github.com/gregsloap/TP1/blob/master/grafico.png)
 
 - gráfico produzido com plotly, segue o link: https://plot.ly/~gregfla2009/3/
+### 2.0 Spring 
+### 2.1 Introdução:
+Continuando o que foi feito em *Ball*, essa parte do trabalho visa implementar uma forma de descrever a mola, seu percurso e comportamento, agora possuindo uma massa em cada ponta, retornando as respectivas coordenadas referentes ao comportamento da mola em questão.
+### 2.2 Pré-Requisitos:
+- Para a realização dessa etapa do trabalho foram necessarias as bibliotecas a seguir:
+		
+		iostream 
+		springmass (contém a classe massa e classe mola, também usado na etapa anterior)
+		simulation (contém a classe abstrata simulation)
+		
+- A versão do compilador utilizada foi gcc 4.9.2.
+- Linhas de compilacao dos arquivos:
+
+		cd < diretório > 
+
+		g++ springmass.cpp test-springmass.cpp
+		
+### 2.3. Descrição dos arquivos:
+
+- **springmass.h:** Define a Classe springmass seus métodos e atributos a serem utilizados na criação dos objetos .
+
+	**Atributos de spring:** Coeficiente de amortecimento da mola, bem como seu Comprimento(deformação), Rigidez(resistencia a deformacao), as Massas a serem adicionadas em suas ponta, bem como a energia aplicada sobre si e sua força; 
+
+	**Métodos de spring:** 
+
+		Step: Calcula o passo da mola. 
+		
+		Display: Imprime os valores de saída.
+		
+- **ball.cpp:** Contem as coordenadas da bola e a implementaçao dos metodos para "movimentá-la" e mantém registro de sua posição.
+- **test-ball.cpp:** Executa os metodos da ball.cpp, dando movimento de fato a bola.
+- **springmass.h:**
+- **springmass.cpp** 
+- **simulation-test.cpp**
