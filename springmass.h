@@ -57,16 +57,15 @@ public:
   void step(double dt) ;
 
 protected:
-  Vector2 position ; 
+  Vector2 position ;
   Vector2 velocity ;
   Vector2 force ;
   double mass ;
-  double energy(double gravity); // Definimos o construtor  energy como privado.
-  double radius ; // Assume-se que as massas sao esferas.
+  double radius ;
 
-  double xmin ; // Limites, i.e., dimensoes da caixa onde o sistema se encontra,
-  double xmax ; // onde x sao dimensoes horizontais e
-  double ymin ; // y sao dimensoes verticais.
+  double xmin ;
+  double xmax ;
+  double ymin ;
   double ymax ;
 } ;
 
@@ -77,22 +76,21 @@ protected:
 class Spring
 {
 public:
-  Spring(Mass * mass1, Mass * mass2, double naturalLength, double stiffness, double damping = 0.01) ;
+  Spring(Mass * mass1, Mass * mass2, double naturalLength, double stiff, double damping = 0.01) ;
   Mass * getMass1() const ;
   Mass * getMass2() const ;
   Vector2 getForce() const ;
   double getLength() const ;
   double getEnergy() const ;
-  double naturalLength; // definimos naturalLength , stiffness , damping , como atributos publicos .
-  double stiffness;
-  double damping;
 
 protected:
-  Vector2 force; // definimos force , energy , lenght , *mass1 e *mass2 como métodos privados .
-  double energy;
-  Mass *mass1;
-  Mass *mass2;
-  double lenght;
+/* begin remove */
+  double naturalLength ;
+  double stiffness ;
+  double damping ;
+  Mass * mass1 ;
+  Mass * mass2 ;
+/* end remove */
 } ;
 
 /* ---------------------------------------------------------------- */
@@ -106,19 +104,23 @@ public:
   void step(double dt) ;
   void display() ;
   double getEnergy() const ;
-  int mkMass(Mass vetMassas); // método para inserção de uma massa
-  void mkSpring(int i, int j,double naturalLength, double stiffness, double damping); // método para inserção de uma mola
 
-//indices i,j para cada massa a ser conectada à mola bem como os parametros damping ,naturalLength, stiffness para construi-la
+/* begin remove */
+  int addMass(Mass m) ;
+  void addSpring(int i, int j, double length, double stiffness) ;
+/* end remove */
 
 protected:
   double gravity ;
 
-  typedef std::vector<Mass> masses_t; // definimos aqui 2 vetores , um para massas e outro para molas.
-  typedef std::vector<Spring> springs_t;
-  masses_t vetMassas;
-  springs_t vetSprings;
+/* begin remove */
+  typedef std::vector<Mass> masses_t ;
+  typedef std::vector<Spring> springs_t ;
 
+  masses_t masses ;
+  springs_t springs ;
+/* end remove */
 } ;
 
 #endif /* defined(__springmass__) */
+
