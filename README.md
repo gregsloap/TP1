@@ -1,4 +1,4 @@
- # Laboratório de Técnicas de programação 1.
+ # Trabalho 1 Técnicas de programação 1.
  ## Universidade de Brasília
  ### Departamento de Ciencias da Computação
  #### Professor: Téofilo de Campos
