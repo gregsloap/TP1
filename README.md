@@ -48,7 +48,7 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 - **simulation-test.cpp**
 
 
-### 1.4. Diagrama de Classes: 
+### 1.4. Diagrama: 
 
 ![diagrama de classes](https://github.com/gregsloap/TP1/blob/master/diagramadeclasses.png)
 
@@ -198,4 +198,7 @@ Continuando o que foi feito em *Ball*, essa parte do trabalho visa implementar u
 - **test-springmass.cpp:** Cria-se o Objeto e são executados os metodos da classe springmass, dando movimento de fato a mola.
 
 ### 2.4. Diagrama: 
-https://github.com/gregsloap/TP1/blob/master/diagramadeclasses2.png
+
+![diagrama de classes](https://github.com/gregsloap/TP1/blob/master/diagramadeclasses2.png)
+
+### 2.5.
