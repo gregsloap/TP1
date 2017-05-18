@@ -50,7 +50,7 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 
 ### 1.4. Diagrama de Classes: 
 
-![diagrama de classes](https://github.com/gregsloap/TP1/blob/master/diagramadeclasses.png)
+![diagrama de classes]()
 
 
 ### 1.5. Saída de *ball.h*
