@@ -505,7 +505,7 @@ Continuando o que foi feito em *Ball*, essa parte do trabalho visa implementar u
 	X2: 0.97416 Y2: 0.928932
 	
 	
-### 2.6. Gráfico:
+- Gráfico:
 
 ![grafico mola 1](https://github.com/gregsloap/TP1/blob/master/sprng.png)
 
@@ -657,5 +657,5 @@ Essa Terceira parte do trabalho objetiva implementar métodos que descrevem o pe
 		(-0.475828,-0.6569)(0.475828,-0.6569)$0.951656
 		(-0.475799,-0.71)(0.475799,-0.71)$0.951599
 		(-0.475772,-0.7649)(0.475772,-0.7649)$0.951543
-Grafico: 		
+- Grafico: 		
 ![diagrama de classes](https://github.com/gregsloap/TP1/blob/master/springmain.png)
