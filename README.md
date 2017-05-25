@@ -158,7 +158,7 @@ O projeto tem como objetivo aplicar os conhecimentos adquiridos sobre programaç
 		0.8 -0.119444
 		0.79 -0.0737778
 
-### 1.6. Gráfico:
+- Gráfico:
 
 	obs: Task 4
 
